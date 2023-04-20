@@ -1,9 +1,7 @@
-#include <studio.h>
+#include <stdio.h>
 /**
- * Main - prints ("with proper grammar, but the outcome is a piece of art, followed by a newline)
+ * main - print ("with proper grammar, but the outcome is a piece of art,\n")
  * Return: Always 0 (Success)
- *
- * printf command
  */
 int main (void)
 {
