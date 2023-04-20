@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * My second C script
+ *
+ */
+
 int main(void)
 {
 	puts("Programming is like building a multilingual puzzle \n");
