@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - prints the last digit of a random number and states if it is greater than 5, equal to 0 or less than 6 and not 0
+ * main - prints the last digit and states if greater than 5, equal to 0 or less than 6 and not 0
  *
  * followed by a newline
  * Return: Always 0
@@ -19,7 +19,7 @@ int main(void)
 	}
 	else if (n % 10 == 0)
 	{
-	printf("Last digit of %d is %d and is 0\n", n , n % 10);
+	printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
 	else
 	{
