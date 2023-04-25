@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
+
 /**
  * main - n is a variable, prints("is positive" if the number is > 0)
  * prints("is zero" if the number == 0)
@@ -12,6 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
 	if (n < 0)  {
 		printf("%d: is positive\n", n);
 	}
