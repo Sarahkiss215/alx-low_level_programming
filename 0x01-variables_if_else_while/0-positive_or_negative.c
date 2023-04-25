@@ -7,7 +7,7 @@
  * prints("is zero" if the number == 0)
  * prints("is negative"if the number is negative)
  * followed by a new line
- * return 0;
+ * Return: 0
  */
 int main(void)
 /** main function */
