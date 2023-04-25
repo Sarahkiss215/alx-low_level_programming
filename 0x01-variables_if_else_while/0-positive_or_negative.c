@@ -12,6 +12,7 @@
 int main(void)
 /** main function */
 {
+	/** main function */
 	int n;
 
 	srand(time(0));
