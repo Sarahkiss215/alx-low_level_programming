@@ -9,6 +9,7 @@
  * followed by a new line
  */
 int main(void)
+/** main function */
 {
 	int n;
 
