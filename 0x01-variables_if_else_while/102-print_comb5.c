@@ -27,10 +27,9 @@ int main(void)
 					putchar ((d % 10) + '0');
 
 					if (a == 9 && b == 8)
-					{
+				
 					putchar (',');
 					putchar (' ');
-					}
 				}
 			}
 		}
