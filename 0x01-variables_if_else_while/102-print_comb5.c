@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (c = 0; c <= 9; c++)
 			{
-				for (d = 0; d <= 9; d++)
+				for (d = a + 1; d <= 9; d++)
 				{
 					putchar ((a % 10) + '0');
 					putchar ((b % 10) + '0');
@@ -31,7 +31,6 @@ int main(void)
 					putchar (',');
 					putchar (' ');
 				}
-				d++;
 			}
 		}
 	}
