@@ -17,10 +17,8 @@ int main(void)
 		{
 			putchar ((a % 10) + '0');
 			putchar ((b % 10) + '0');
-		
 			if (a != 1 && b != 0)
 				continue;
-		
 			putchar (',');
 			putchar (' ');
 		}
