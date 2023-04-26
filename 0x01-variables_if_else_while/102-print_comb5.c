@@ -26,7 +26,7 @@ int main(void)
 					putchar ((c % 10) + '0');
 					putchar ((d % 10) + '0');
 
-					if (a == 0 && b == 0 && c == 0 && d != 0)
+					if (a == 9 && b == 8)
 					{
 					putchar (',');
 					putchar (' ');
