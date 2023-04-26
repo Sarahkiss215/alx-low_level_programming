@@ -19,9 +19,9 @@ int main(void)
 			putchar ((b % 10) + '0');
 			if (a != 1 && b != 0)
 				continue;
-			putchar (',');
-			putchar (' ');
 		}
+		putchar (',');
+		putchar (' ');
 	}
 	putchar ('\n');
 
