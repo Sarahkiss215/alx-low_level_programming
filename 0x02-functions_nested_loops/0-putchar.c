@@ -1,10 +1,10 @@
-#include <unistd.h>
 #include <main.h>
+#include <unistd.h>
 #include <stdio.h>
 
 /**
  * main - prints _putchar
- * followed by a  new line
+ * followed by a new line
  *
  * Return: 0
  */
