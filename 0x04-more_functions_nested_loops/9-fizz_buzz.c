@@ -12,14 +12,15 @@ int main(void)
 	for (i = 0; i <= 100; i++)
 	{
 		if (i % 15 == 0)
-			_putchar('FizzBuzz);
+			printf("FizzBuzz");
 		else if (i % 5 == 0)
-			_putchar('Buzz');
+			printf("Buzz");
 		else if (i % 3 == 0)
-			_putchar('Fizz');
+			printf("Fizz");
 		else
-			_putchar((i % 10) + '0');
-		_putchar(' ');
+			printf("%d", i);
+		printf(" ");
 	}
-	_putchar('\n');
+	printf("\n");
+	return (0);
 }
