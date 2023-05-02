@@ -3,14 +3,16 @@
 /**
  * puts_half - prints half of a string
  * followed by a new line
- * @str: string to be printed
  *
+ * @str: string to be printed
  */
 
 void puts_half(char *str)
 {
 	int digit, length, n;
 
+	digit = 0;
+	length = 0;
 	while (str[digit++])
 		length++;
 	if ((length % 2) == 0)
