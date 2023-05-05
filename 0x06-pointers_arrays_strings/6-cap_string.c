@@ -23,6 +23,6 @@ char *cap_string(char *str)
 		}
 	}
 	if (str[0] >= 'a' && str[0] <= 'z')
-		str[n] = (int)str[n] - 32;
+		str[0] = (int)str[0] - 32;
 	return (str);
 }
