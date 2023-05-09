@@ -6,3 +6,4 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 void set_string(char **s, char *to);
+void print_diagsums(int *a, int size);
