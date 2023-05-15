@@ -12,7 +12,7 @@ char *_strdup(char *str)
 {
 	int n = 0;
 	int size = 0;
-	char *newstr;
+	char *newstr = str;
 
 	if (str == NULL)
 	{
@@ -31,7 +31,6 @@ char *_strdup(char *str)
 	if (newstr == NULL)
 	{
 		return (NULL);
-	}
-	
+	}	
 	return (newstr);
 }
