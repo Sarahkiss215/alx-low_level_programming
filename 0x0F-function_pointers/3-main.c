@@ -1,6 +1,7 @@
 #include "3-calc.h"
-#include <stddef>
+#include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints result of simple opertaions
@@ -21,7 +22,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(98);
 	}
 	digit1= atoi(argv[1]);/* first integer at index 1 */
-	op = argv[2];/* operator at index 2 */
+	op = (argv[2]);/* operator at index 2 */
 	digit2 = atoi(argv[3]);/*second integer at index 3 */
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
@@ -29,11 +30,11 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(99);/* operator not found */
 	}
-	if ((op == '/' || op == '%') !atoi(argv[3]))
+	if ((*op == '/' || *op == '%') && !atoi(argv[3]))
 	{
 		printf("Error\n");
 		return (100);/* (/ or %) by zero */
 	}
-	printf("%d\n", get_op_func(op)(num1, num2));
+	printf("%d\n", get_op_func(op)(digit1, digit2));
 	return (0);
 }
