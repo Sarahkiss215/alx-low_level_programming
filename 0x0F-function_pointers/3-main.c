@@ -21,7 +21,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	digit1= atoi(argv[1]);/* first integer at index 1 */
+	digit1 = atoi(argv[1]);/* first integer at index 1 */
 	op = (argv[2]);/* operator at index 2 */
 	digit2 = atoi(argv[3]);/*second integer at index 3 */
 
