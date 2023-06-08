@@ -26,14 +26,14 @@ unsigned int binary_to_uint(const char *b)
 	{
 		index++;
 	}
-	for (index = index - 1; index >= 0; index++)
+	for (index = index - 1; index >= 0; index--)
 	{
 		if (b[index] != 48 && b[index] != 49)
 		{
 			return (0);
 		}
-		product *= 2;
-		value += (b[index] - '0') * product;
+		value = value + (b[index] - '0') * product;
+		product = product * 2;
 	}
 	return (value);
 }
