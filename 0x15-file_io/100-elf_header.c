@@ -299,7 +299,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	get_osabi(headerf->e_ident);
 	get_abi(headerf->e_ident);
 	get_type(headerf->e_type, headerf->e_ident);
-	get_entryp(headerf->e_entry, headerf->e_ident);
+	get_entry(headerf->e_entry, headerf->e_ident);
 
 	free(headerf);
 	exit_elffile(op);
