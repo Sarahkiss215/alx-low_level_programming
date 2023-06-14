@@ -14,8 +14,8 @@ void get_data(unsigned char *e_ident);
 void get_version(unsigned char *e_ident);
 void get_abi(unsigned char *e_ident);
 void get_osabi(unsigned char *e_ident);
-void get_type(unsigned int elf_type, unsigned char *e_ident);
-void get_entryp(unsigned long int e_entryp, unsigned char *e_ident);
+void get_type(unsigned int e_type, unsigned char *e_ident);
+void get_entry(unsigned long int e_entry, unsigned char *e_ident);
 void exit_elffile(int elffile);
 
 /**
@@ -189,7 +189,7 @@ void get_abi(unsigned char *e_ident)
 }
 /**
  * get_type - gets the type of an ELF file
- * @elf_type: type of ELF file
+ * @e_type: type of ELF file
  * @e_ident: array of ELF's class
  * Return: Nothing
  */
@@ -223,12 +223,12 @@ void get_type(unsigned int e_type, unsigned char *e_ident)
 	}
 }
 /**
- * get_entryp -  gets the entry point
- * @e_entryp: address of entry point
+ * get_entry -  gets the entry point
+ * @e_entry: address of entry point
  * @e_ident: array of ELF's entry points
  * Return: Nothing
  */
-void get_entryp(unsigned long int e_entry, unsigned char *e_ident)
+void get_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
 	printf("  Entry point address:               ");
 
