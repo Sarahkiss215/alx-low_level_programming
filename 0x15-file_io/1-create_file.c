@@ -10,28 +10,28 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int op;
-	int wr;
-	int length;
+	int op = 0;
+	int wr = 0;
+	int length = 0;
 
 	if (filename == NULL)
 	{
 		return (-1);
 	}
 	/* S-IR read permission for owner, S_IWwrite permission for owner*/
-	op = open(filename, O_CREAT | O_RDWR | O_TRUNC,  S_IRUSR | S_IWUSR);
-	length = 0;
+	op = open(filename, O_CREAT | O_WRONLY | O_TRUNC,  S_IRUSR | S_IWUSR);
 	wr = write(op, text_content, length);
-	if (text_content != NULL)
+	if (op == -1)
 	{
-		for (length = 0; text_content[length];)
-		{
-			length++;
-		}
+		return (-1);
 	}
-	if (op == -1 || wr == -1)
+	while (text_content && text_content[length])
 	{
-		return (-1);/** if write fails **/
+		length++;
+	}
+	if (wr == -1)
+	{
+		return (-1);
 	}
 	close(op);
 
