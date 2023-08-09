@@ -182,7 +182,7 @@ void get_osabi(unsigned char *e_ident)
  * @e_ident: A pointer to an array with the ELF ABI version.
  * Return: Nothing.
  */
-void gett_abi(unsigned char *e_ident)
+void get_abi(unsigned char *e_ident)
 {
 	printf("  ABI Version:                       %d\n",
 	       e_ident[EI_ABIVERSION]);
