@@ -4,7 +4,7 @@
  * linear_skip - searches for a value in a sorted skip list of integers
  * @list: pointer to the head of the skip list to search in
  * @value: value to be searched for
-
+ *
  * Return: pointer to first node containing value or NULL if list is empty
  */
 
