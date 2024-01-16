@@ -29,7 +29,7 @@ void int_array(int *array, int size)
 }
 
 /**
- * binary_search - Searches for a value in a sorted array of integers 
+ * binary_search - Searches for a value in a sorted array of integers
  * @array: pointer to first element of the array to be searched
  * @size: number of elements in the array
  * @value: value to be searched
@@ -40,7 +40,7 @@ void int_array(int *array, int size)
 int binary_search(int *array, size_t size, int value)
 {
 	int down = 0;
-	int up= size - 1;
+	int up = size - 1;
 	int mid;
 
 	if (array == NULL || size == 0 || array[0] > value)
